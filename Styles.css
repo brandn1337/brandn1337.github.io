@@ -1,0 +1,35 @@
+		body 
+		{
+			background-color: black;
+		}
+
+		.Menu
+		{
+			background-color: grey;
+			width: 100%;
+			height: 100px;
+			background-clip: border-box;
+		}
+
+		.MenuButton
+		{
+
+			background-color: black;
+			border: 1px solid white;
+			padding: 15px 32px;
+			font-size: 16px;
+			color: white;
+			float: left;
+			margin-top: 50px;
+		}
+
+		.Workshop
+		{
+			background-image: url("Images/WoodText.jpg");
+			background-repeat: repeat-x;
+			width: 100%;
+			background-clip: border-box;
+			position: static;
+			top: 100px;
+			height: 800px;
+		}
