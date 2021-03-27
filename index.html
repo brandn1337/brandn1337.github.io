@@ -2,40 +2,73 @@
 <html>
 <head>
 	<title>Laplace's Demon</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
 
 </head>
 
 <body>
 
-	<script type="text/javascript" src="Scripts.js"></script>
-
+	
+	<!-- This divider is where the Menu buttons are. Check the Css ".Menu" for its style   -->
 	<div class="Menu">
-
-	<button class="MenuButton" id="WS" onclick="MenuChange(1)"> Workshop </button>
-	<button class="MenuButton" id="W"  onclick="MenuChange(2)"> World </button>
-	<button class="MenuButton" id="I"  onclick="MenuChange(3)"> Inventory </button>
-	<button class="MenuButton" id="Q"  onclick="MenuChange(4)"> Quests </button>
+	    <!-- these Buttons are what swich to each divider. They all call the Menu change function that switches based off what Num they send -->
+		<button class="MenuButton"  onclick="MenuChange(1)"> Workshop </button>
+		<button class="MenuButton"  onclick="MenuChange(2)"> World </button>
+		<button class="MenuButton"  onclick="MenuChange(3)"> Inventory </button>
+		<button class="MenuButton"  onclick="MenuChange(4)"> Quests </button>
 	</div>
 
 
-	<div class="Workshop">
-
-	</div>
-
-
-	<div class="World">
+	<div class="WorkshopPage" id="WS">
 
 	</div>
 
 
-	<div class="Inventory">
-
+	<div class="WorldPage" id="W">
+		
 	</div>
 
 
-	<div class="Quests">
+	<div class="InventoryPage" id="I">
+		<div id="MineralInv">
+		</div>
+		<div id="ToolInv">
+		</div>
+	</div>
 
+
+	<div class="QuestPage" id="Q">
+		<div class="Quest">
+			<h1>Test</h1>
+			<p>Test</p>
+			<button>Complete</button>
+		</div>
+		<div class="Quest">
+			<h1>Test</h1>
+			<p>Test</p>
+			<button>Complete</button>
+		</div>
+		<div class="Quest">
+			<h1>Test</h1>
+			<p>Test</p>
+			<button>Complete</button>
+		</div>
+		<div class="Quest">
+			<h1>Test</h1>
+			<p>Test</p>
+			<button>Complete</button>
+		</div>
+		<div class="Quest">
+			<h1>Test</h1>
+			<p>Test</p>
+			<button>Complete</button>
+		</div>
+		<div class="Quest">
+			<h1>Test</h1>
+			<p>Test</p>
+			<button>Complete</button>
+		</div>
 	</div>
 
 

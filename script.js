@@ -1,5 +1,6 @@
-alert("test");
-function MenuChange(var Num)
+ 
+
+function MenuChange(Num)
 {
 
 	if (Num == 1)

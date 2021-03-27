@@ -1,0 +1,74 @@
+		body 
+		{
+			background-color: black;
+		}
+
+		.Menu
+		{
+			background-color: grey;
+			width: 100%;
+			height: 100px;
+			background-clip: border-box;
+		}
+
+		.MenuButton
+		{
+
+			background-color: black;
+			border: 1px solid white;
+			padding: 15px 32px;
+			font-size: 16px;
+			color: white;
+			float: left;
+			margin-top: 50px;
+		}
+		.WorkshopPage
+		{
+			
+			background-image: url("Images/WoodText.jpg");
+			background-repeat: repeat-x;
+			width: 100%;
+			background-clip: border-box;
+			height: 800px;
+		}
+		.WorldPage
+		{
+			display: none;
+			background-image: url("Images/Grass.jpg");
+			background-size: 100%;
+			width: 100%;
+			background-clip: border-box;
+
+			height: 800px;
+		}
+		#MineralInv
+		{
+			width: 400px;
+			height: 600px;
+			float: left;
+			outline: 1px solid white;
+		}
+		#ToolInv
+		{
+			width: 400px;
+			height: 600px;
+			float: left;
+			outline: 1px solid white;
+		}
+		.QuestPage
+		{
+			display: none;
+			background-size: 100%;
+			width: 100%;
+			background-clip: border-box;
+
+			height: 800px;
+			background-color: rgb(244, 226, 198);
+		}
+		.Quest
+		{
+			width: 33%;
+			height: 200px;
+			outline: 1px solid black;
+			float: left;
+		}
