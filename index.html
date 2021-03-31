@@ -4,6 +4,8 @@
 	<title>Laplace's Demon</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="script.js"></script>
+	<script src="quests.js"></script>
+	<script src="minerals.js"></script>
 
 </head>
 
@@ -26,12 +28,14 @@
 
 
 	<div class="WorldPage" id="W">
-		
+		<button class="WorldButtons" onclick="AddStone(1)">Mine Stone</button>
+		<button class="WorldButtons">Mine Copper</button>
 	</div>
 
 
 	<div class="InventoryPage" id="I">
 		<div id="MineralInv">
+			<p Class="InvText">Stone: <span id="StoneNum">0</span></p>
 		</div>
 		<div id="ToolInv">
 		</div>
@@ -40,9 +44,9 @@
 
 	<div class="QuestPage" id="Q">
 		<div class="Quest">
-			<h1>Test</h1>
-			<p>Test</p>
-			<button>Complete</button>
+			<h1>Stone Collecting 1</h1>
+			<p>Collect 20 stone</p>
+			<button onclick="CompleteQuest(1)">Complete</button>
 		</div>
 		<div class="Quest">
 			<h1>Test</h1>
@@ -71,6 +75,13 @@
 		</div>
 	</div>
 
+	<script>
+	var Stone = 0;
+	var Wood = 0;
+	var Iron = 0;
+	var Copper = 0;
+
+	</script>
 
 </body>
 </html>
