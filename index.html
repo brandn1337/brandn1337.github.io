@@ -28,14 +28,40 @@
 
 
 	<div class="WorldPage" id="W">
-		<button class="WorldButtons" onclick="AddStone(1)">Mine Stone</button>
-		<button class="WorldButtons">Mine Copper</button>
+
+		<div class="WorldLocation"> 
+			<h1 style="color: white;"> Local Cavern</h1>
+			<button class="WorldButtons" onclick="AddStone(1)">Mine Stone</button>
+			<p style="color: white; display: inline;">Stone: <span id="StoneNum">0</span></p>
+
+			<br>
+			<button class="WorldButtons" onclick="AddCopper(1)">Mine Copper</button>
+			<p style="color: white; display: inline;">Copper: <span id="CopperNum">0</span></p>
+		</div>
+		<div class="WorldLocation"> 
+
+			<h1 style="color: white; "> Local Forest</h1>
+
+			<button class="WorldButtons" onclick="AddLumber(1)">Chop lumber</button> 
+			<p style="color: white; display: inline;">Lumber: <span id="LumberNum">0</span></p>
+
+			<br>
+			<button class="WorldButtons" onclick="AddLeaves(1)">Forage Leaves</button>
+			<p style="color: white; display: inline;">Leaves: <span id="LeavesNum">0</span></p>
+		</div>
+
+		
 	</div>
 
 
 	<div class="InventoryPage" id="I">
 		<div id="MineralInv">
-			<p Class="InvText">Stone: <span id="StoneNum">0</span></p>
+		    <h1 class="InvText">Mineral Inventory</h1>
+			<p Class="InvText">Stone: <span id="StoneNumm">0</span></p>
+			<p Class="InvText">Copper: <span id="CopperNumm">0</span></p>
+			<p Class="InvText">Lumber: <span id="LumberNumm">0</span></p>
+			<p Class="InvText">Leaves: <span id="LeavesNumm">0</span></p>
+			
 		</div>
 		<div id="ToolInv">
 		</div>
@@ -80,6 +106,9 @@
 	var Wood = 0;
 	var Iron = 0;
 	var Copper = 0;
+	var Lumber = 0;
+	var Leaves = 0;
+	var string = 0;
 
 	</script>
 
