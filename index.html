@@ -15,15 +15,29 @@
 	<!-- This divider is where the Menu buttons are. Check the Css ".Menu" for its style   -->
 	<div class="Menu">
 	    <!-- these Buttons are what swich to each divider. They all call the Menu change function that switches based off what Num they send -->
+		<h1 style=" margin-bottom: 11px">Year <span id="YearNum">0</span> Month <span id="MonthNum">0</span> Day <span id="DayNum">0</span> Hour <span id="HourNum">0</span></h1>
 		<button class="MenuButton"  onclick="MenuChange(1)"> Workshop </button>
 		<button class="MenuButton"  onclick="MenuChange(2)"> World </button>
-		<button class="MenuButton"  onclick="MenuChange(3)"> Inventory </button>
-		<button class="MenuButton"  onclick="MenuChange(4)"> Quests </button>
+		<button class="MenuButton"  onclick="MenuChange(3)"> Quests </button>
 	</div>
 
 
 	<div class="WorkshopPage" id="WS">
 
+		<div class="MineralInv" style="float:left; width: 200px;">
+			<p Class="InvText">Stone: <span id="StoneNumm">0</span></p> <br>
+			<p Class="InvText">Copper: <span id="CopperNumm">0</span></p> <br>
+			<p Class="InvText">Lumber: <span id="LumberNumm">0</span></p> <br>
+			<p Class="InvText">Leaves: <span id="LeavesNumm">0</span></p> <br>
+			
+		</div>
+		<div class="MineralInv" style="float:left;">
+			<p Class="InvText">Stone: <span id="StoneNumm">0</span></p> <br>
+			<p Class="InvText">Copper: <span id="CopperNumm">0</span></p> <br>
+			<p Class="InvText">Lumber: <span id="LumberNumm">0</span></p> <br>
+			<p Class="InvText">Leaves: <span id="LeavesNumm">0</span></p> <br>
+			
+		</div>
 	</div>
 
 
@@ -49,24 +63,7 @@
 			<button class="WorldButtons" onclick="AddLeaves(1)">Forage Leaves</button>
 			<p style="color: white; display: inline;">Leaves: <span id="LeavesNum">0</span></p>
 		</div>
-
-		
 	</div>
-
-
-	<div class="InventoryPage" id="I">
-		<div id="MineralInv">
-		    <h1 class="InvText">Mineral Inventory</h1>
-			<p Class="InvText">Stone: <span id="StoneNumm">0</span></p>
-			<p Class="InvText">Copper: <span id="CopperNumm">0</span></p>
-			<p Class="InvText">Lumber: <span id="LumberNumm">0</span></p>
-			<p Class="InvText">Leaves: <span id="LeavesNumm">0</span></p>
-			
-		</div>
-		<div id="ToolInv">
-		</div>
-	</div>
-
 
 	<div class="QuestPage" id="Q">
 		<div class="Quest">
@@ -102,6 +99,13 @@
 	</div>
 
 	<script>
+	
+	var Hour = 0;
+	var Day = 0;
+	var Month = 0;
+	var Year = 0;
+	RandVar = setInterval(TimeMechanic, 1000)
+
 	var Stone = 0;
 	var Wood = 0;
 	var Iron = 0;
