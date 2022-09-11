@@ -1,1 +1,1 @@
-# Fuck you All
+# Im creating an Idle Game
