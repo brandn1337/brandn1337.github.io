@@ -14,7 +14,7 @@ body
     height: 100%;
     background-color: blue;
     color: white;
-    overflow: hidden;
+    overflow: auto;
 }
 #OverWorld
 {
