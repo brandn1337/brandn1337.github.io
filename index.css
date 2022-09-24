@@ -15,4 +15,14 @@ body
     background-color: brown;
     color: white
 }
-/* 4 main divs for the page, left bar, top bar, top right and righ bar.    Also their repsective heiarchies */
+#OverWorld
+{
+    width: 100%;
+    height: 600px;
+    background-color: skyblue;
+}
+#Underground
+{
+    width: 100%;
+    height: 600px;
+}
