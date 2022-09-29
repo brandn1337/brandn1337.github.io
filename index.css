@@ -34,15 +34,17 @@ body
     margin: 20px;
     text-transform: capitalize;
 }
-#main > button > div
+#Main > button > div
 {
+    outline: 1px solid white;
+    outline-offset: -1px;
     background-color: gray;
     display: none;
     position: absolute;
-   width: max-content;
-   height: max-content;
+    width: max-content;
+    height: max-content;
 }
-#main > button:hover + #main > button > div
+#Main > button:hover + #main > button > div
 {
     display: block;
 }
