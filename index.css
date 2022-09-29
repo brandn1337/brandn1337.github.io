@@ -36,7 +36,13 @@ body
 }
 #main > button > div
 {
+    background-color: gray;
+    display: none;
     position: absolute;
    width: max-content;
    height: max-content;
+}
+#main > button:hover + #main > button > div
+{
+    display: block;
 }
