@@ -34,7 +34,7 @@ body
     margin: 20px;
     text-transform: capitalize;
 }
-#Main > button > div
+#UpgradeToolTip
 {
     outline: 1px solid white;
     outline-offset: -1px;
@@ -44,7 +44,7 @@ body
     width: max-content;
     height: max-content;
 }
-#Main > button:hover + #main > button > div
+#Main > button:hover + #UpgradeToolTip
 {
     display: block;
 }

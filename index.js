@@ -20,5 +20,5 @@ function CreateUpgrade(Num)
     tooltip.appendChild(Break1);
     tooltip.appendChild(p2);
     Button.appendChild(tooltip);
-
+    tooltip.setAttribute('id','UpgradeToolTip');
 }
