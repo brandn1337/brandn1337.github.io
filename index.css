@@ -41,8 +41,11 @@ body
     background-color: gray;
     display: none;
     position: absolute;
-    width: max-content;
+    width: 200px;
     height: max-content;
+    padding: 5px;
+    left: 110%;
+    top: -20px;
 }
 #Main > button:hover #UpgradeToolTip
 {

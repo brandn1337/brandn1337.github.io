@@ -12,12 +12,14 @@ function CreateUpgrade(Num)
     h1.innerText = Upgrades[Num].Name
     var p1 = document.createElement("p");
     p1.innerText = Upgrades[Num].Description
-    var Break1 = document.createElement("br");
+    var Break1 = document.createElement("hr");
+    var Break2 = document.createElement("hr");
     var p2 = document.createElement("p");
     p2.innerText = "Cost: " + Upgrades[Num].Cost;
     tooltip.appendChild(h1);
-    tooltip.appendChild(p1);
     tooltip.appendChild(Break1);
+    tooltip.appendChild(p1);
+    tooltip.appendChild(Break2);
     tooltip.appendChild(p2);
     Button.appendChild(tooltip);
     tooltip.setAttribute('id','UpgradeToolTip');
