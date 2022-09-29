@@ -7,23 +7,49 @@ html
 }
 body
 {
-    outline: 1px solid grey;
+    outline: 1px solid white;
     outline-offset: -1px;
     margin: 0px;
     width: 100%;
     height: 100%;
-    background-color: blue;
+    background-color: black;
     color: white;
     overflow: auto;
 }
-#OverWorld
+#Main
 {
-    width: 100%;
-    height: 600px;
-    background-color: skyblue;
+    width: 80%;
+    height: 100%;
+    outline: 1px solid white;
+    outline-offset: -1px;
+    margin: 0px;
+    float: left;
+
 }
-#UnderWorld
+#Main> button 
 {
-    width: 100%;
-    height: 600px;
+    color: white;
+    background-color: grey;
+    width: 150px;
+    height: 30px;
+    margin: 20px;
+    text-transform: capitalize;
+}
+#Side > button 
+{
+    color: white;
+    background-color: grey;
+    width: 150px;
+    height: 30px;
+    margin: 20px;
+    text-transform: capitalize; 
+}
+#Side
+{
+    width: 20%;
+    height: 100%;
+    outline: 1px solid white;
+    outline-offset: -1px;
+    margin: 0px; 
+    float:right;
 }
