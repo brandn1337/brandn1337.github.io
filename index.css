@@ -44,7 +44,7 @@ body
     width: max-content;
     height: max-content;
 }
-#Main > button:hover + #UpgradeToolTip
+#Main > button:hover #UpgradeToolTip
 {
     display: block;
 }
