@@ -1,21 +1,28 @@
 import Upgrades from './Upgrades.json' assert {type:'json'};
 CreateUpgrade(1);
+var stamina = 0
 
 
 function CreateUpgrade(Num)
 {
     var tooltip = document.createElement("div")
-    var Button = document.createElement("button");
-    Button.innerText = Upgrades[Num].Name;
-    document.getElementById("Main").appendChild(Button);
-    var h1 = document.createElement("h1");
-    h1.innerText = Upgrades[Num].Name
-    var p1 = document.createElement("p");
-    p1.innerText = Upgrades[Num].Description
+    var Button = document.createElement("button"); 
+    var h1 = document.createElement("h1"); 
+    var p1 = document.createElement("p"); 
     var Break1 = document.createElement("hr");
     var Break2 = document.createElement("hr");
     var p2 = document.createElement("p");
-    p2.innerText = "Cost: " + Upgrades[Num].Cost;
+    document.getElementById("Main").appendChild(Button);
+    Button.innerText = Upgrades[Num].Name;
+    h1.innerText = Upgrades[Num].Name;
+    p1.innerText = Upgrades[Num].Description;
+    console.log(Upgrades[Num].Cost[1])
+    for(let i = 0; i < Object.keys(Upgrades[Num].Cost).length; i++)
+    {
+        p2.innerHTML += Object.keys(Upgrades[Num].Cost)[i] + ": " + Object.values(Upgrades[Num].Cost)[0] + "<br>";
+        
+    }
+   
     tooltip.appendChild(h1);
     tooltip.appendChild(Break1);
     tooltip.appendChild(p1);
