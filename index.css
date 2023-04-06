@@ -1,59 +1,48 @@
-/* Dumb Html and body styling */
-
 html
 {
     width: 100%;
     height: 100%;
+    
 }
 body
 {
-    outline: 1px solid white;
-    outline-offset: -1px;
-    margin: 0px;
-    width: 100%;
     height: 100%;
-    background-color: rgb(64, 64, 64);
-    color: white;
-    overflow: auto;
-}
-#Main
-{
     width: 100%;
-    height: 100%;
-    outline: 1px solid white;
-    outline-offset: -1px;
     margin: 0px;
-
-}
-#Main> button 
-{
-    color: white;
-    background-color: black;
-    width: 150px;
-    height: 30px;
-    margin: 20px;
-    text-transform: capitalize;
-}
-#Main > button:hover
-{
-  opacity: 0.70;
-}
-
-#UpgradeToolTip
-{
-    outline: 1px solid white;
-    outline-offset: -1px;
-    background-color: gray;
-    display: none;
-    position: absolute;
-    width: 200px;
-    height: max-content;
-    padding: 5px;
-    left: 180px;
-    top: 20px;
+    background-color: #1a1a1a;
     
 }
-#Main > button:hover #UpgradeToolTip
+#Main 
 {
-    display: block;
+    position:  absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: white 1px solid;
+    padding: 100px;
+}
+.Card
+{
+    background-image: url("Swordbg.png");
+    background-size: 100% 100%;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16.6%;
+    height: 16.6%;
+    border: blue 1px solid;
+    box-sizing: border-box;
+    float: left;
+ 
+}
+.Cardp
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
